@@ -1,0 +1,19 @@
+@baseUrl = http://127.0.0.1:8000
+
+POST {{baseUrl}}/userCreate
+Content-Type: application/json
+#Authorization: Bearer {{accessToken}}
+
+{
+    "email": "test@gmail.com",
+    "password": "testproto"
+}
+
+POST {{baseUrl}}/login_check
+Content-Type: application/json
+#Authorization: Bearer {{accessToken}}
+
+{
+    "email": "test@gmail.com",
+    "password": "testproto"
+}
